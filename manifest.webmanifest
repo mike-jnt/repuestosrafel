@@ -1,0 +1,14 @@
+{
+  "name": "Comercializadora MAR",
+  "short_name": "MAR Repuestos",
+  "description": "Sistema comercial para distribución de repuestos y lubricantes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7fa",
+  "theme_color": "#184b81",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
