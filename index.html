@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#184b81">
+  <title>Comercializadora MAR · C1.8.1</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo-comercializadora-mar.jpeg">
+  <link rel="stylesheet" href="css/app.css?v=C1.8.1">
+</head>
+<body>
+  <section class="login-screen" id="loginScreen">
+    <div class="login-shell">
+      <div class="login-card">
+        <div class="login-card-head">
+          <img class="login-logo" src="assets/logo-comercializadora-mar.jpeg" alt="Comercializadora MAR Repuestos Automotriz">
+          <h2>Iniciar sesión</h2>
+          <p class="lead">Distribución mayorista de repuestos y lubricantes para carros y motos.</p>
+        </div>
+        <form class="login-form" id="loginForm">
+          <div class="field">
+            <label for="loginEmail">Correo electrónico</label>
+            <div class="login-input-wrap"><span class="login-input-icon">✉️</span><input class="input" id="loginEmail" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field">
+            <label for="loginPassword">Contraseña</label>
+            <div class="login-input-wrap password-field"><span class="login-input-icon">🔒</span><input class="input" id="loginPassword" type="password" autocomplete="current-password" required><button class="password-toggle" id="loginPasswordToggle" type="button">👁️ Ver</button></div>
+          </div>
+          <button class="btn btn-primary login-btn" type="submit">Ingresar al sistema</button>
+          <div class="actions" style="margin-top:10px"><button class="btn btn-secondary btn-sm" id="resetPasswordButton" type="button">¿Olvidaste la contraseña?</button><button class="btn btn-outline btn-sm" id="setupAdminButton" type="button">Configurar administrador inicial</button></div>
+          <div class="login-message" id="loginMessage"></div>
+        </form>
+</div>
+    </div>
+  </section>
+
+  <div class="mobile-overlay" id="overlay"></div>
+  <div class="app auth-hidden" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img class="brand-logo-image" src="assets/logo-comercializadora-mar.jpeg" alt="Comercializadora MAR Repuestos Automotriz">
+        <div class="brand-text sr-only">
+          <h1 id="brandName">Comercializadora MAR</h1>
+          <span>Repuestos automotriz · distribución</span>
+        </div>
+      </div>
+      <nav class="menu" id="menu"></nav>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div class="top-left">
+          <button class="hamb" id="mobileMenuButton" aria-label="Abrir menú">☰</button>
+          <button class="desktop-menu-toggle no-print" id="desktopSidebarToggle" aria-label="Contraer menú">☰</button>
+          <div>
+            <h1 class="page-title" id="pageTitle">Inicio</h1>
+            <div class="kpi-line" id="pageSubtitle"></div>
+          </div>
+        </div>
+        <div class="top-actions no-print">
+          <span class="pill online" id="syncStatus">● Datos locales</span>
+          <span class="pill" id="userSession">Administrador</span>
+          <button class="btn btn-secondary btn-sm" id="logoutButton">Salir</button>
+        </div>
+      </header>
+      <section class="view" id="view"></section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" role="dialog" aria-modal="true">
+    <div class="modal-card" id="modalCard"></div>
+  </div>
+  <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/12.17.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.17.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/12.17.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase-config.js?v=C1.8.1"></script>
+  <script src="js/core.js?v=C1.8.1"></script>
+  <script src="js/brand.js?v=C1.8.1"></script>
+  <script src="js/image-cache.js?v=C1.8.1"></script>
+  <script src="js/firestore-files.js?v=C1.8.1"></script>
+  <script src="js/cloud.js?v=C1.8.1"></script>
+  <script src="js/pdf.js?v=C1.8.1"></script>
+  <script src="js/app.js?v=C1.8.1"></script>
+</body>
+</html>

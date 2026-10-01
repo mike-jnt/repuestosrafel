@@ -1,0 +1,12 @@
+{
+  "version": "C1.8.1",
+  "name": "Comercializadora MAR",
+  "buildDate": "2026-10-01",
+  "storage": "Firebase Authentication + Cloud Firestore + imágenes Base64 fragmentadas + miniaturas locales + caché IndexedDB",
+  "firebaseEnabled": true,
+  "firebaseProject": "repuestos-bb42c",
+  "firebaseSdk": "12.17.0 compat",
+  "description": "Hotfix de producción: campos monetarios COP aceptan cualquier valor entero en pesos, incluidos abonos como $999.",
+  "invoiceLayout": "professional-v2",
+  "invoiceTitle": "FACTURA DE COMPRA"
+}
